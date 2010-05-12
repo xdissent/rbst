@@ -60,11 +60,11 @@ class RbST
     puts help
   end
   
-private
-  
   def self.executable(writer = :html)
     File.expand_path(File.join(File.dirname(__FILE__), "rst2parts", "rst2#{writer}.py"))
   end
+  
+private
   
   def execute(command)
     output = ''
